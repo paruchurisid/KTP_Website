@@ -13,7 +13,7 @@ const eboardPositions = ["President", "VP External Affairs", "VP Internal Affair
 const names = [["Maya","Patel"],["Eli","Thompson"],["Nora","Chen"],["Caleb","Williams"],["Sofia","Martinez"],["Owen","Brooks"],["Amara","Okafor"],["Theo","Kim"],["Lena","Foster"],["Miles","Robinson"],["Iris","Nguyen"],["Noah","Davis"],["Zara","Ali"],["Ben","Kaplan"],["Avery","Scott"],["Jordan","Price"],["Sam","Rao"],["Tessa","Miller"],["Leo","Gonzalez"],["Priya","Shah"],["Cam","Reed"],["Jules","Morgan"],["Rina","Park"],["Devin","Cole"]];
 const majors = ["Computer Science & Engineering", "Data Analytics", "Information Systems (Fisher)", "Industrial & Systems Engineering", "Computer Engineering", "Marketing", "Design", "Finance", "Public Policy", "Biomedical Engineering"];
 const classes = ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta"];
-const companies = ["JPMC", "AEP", "Vertiv", "Mastercard", "Nintendo", "Battelle", "Tesla", "Honda", "Loop"];
+const companies = ["JPMorgan Chase", "Nationwide", "Cardinal Health", "Huntington", "Intel", "Honda", "Battelle", "Root", "CoverMyMeds"];
 
 const members: Member[] = names.map(([firstName,lastName], index) => {
   const role: MemberRole = index < 9 ? "eboard" : index < 15 ? "active" : index < 19 ? "director" : "alumni";

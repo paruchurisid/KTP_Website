@@ -1,8 +1,8 @@
 import type { ChapterEvent, Faq, RushEvent } from "@/types";
 
 const rushEvents: RushEvent[] = [
-  { id: "meet-ktp", title: "Meet KTP", startsAt: "2026-09-01T18:30:00-04:00", location: "Ohio Union · Great Hall Meeting Room", description: "Start here. Meet members, hear what we build, and get a feel for the chapter.", rsvpUrl: "https://forms.gle/example", isOpen: true },
-  { id: "tech-night", title: "Build Night", startsAt: "2026-09-03T19:00:00-04:00", location: "Dreese Labs · Room 113", description: "A low-pressure team challenge—no coding experience required.", rsvpUrl: "https://forms.gle/example", isOpen: true },
+  { id: "meet-ktp", title: "Meet KTP", startsAt: "2026-09-01T18:30:00-04:00", location: "Ohio Union · Great Hall Meeting Room", description: "Start here. Meet members, hear what we build, and get a feel for the chapter.", isOpen: true },
+  { id: "tech-night", title: "Build Night", startsAt: "2026-09-03T19:00:00-04:00", location: "Dreese Labs · Room 113", description: "A low-pressure team challenge—no coding experience required.", isOpen: true },
   { id: "professional", title: "Professional Night", startsAt: "2026-09-08T18:30:00-04:00", location: "Baker Systems · Room 180", description: "Practice the real skills that make internships, interviews, and careers click.", isOpen: true },
   { id: "coffee", title: "Coffee Chats", startsAt: "2026-09-10T17:30:00-04:00", location: "18th Avenue Library", description: "Small conversations with members across majors and pledge classes.", isOpen: true },
   { id: "invite", title: "Chapter Night", startsAt: "2026-09-13T18:00:00-04:00", location: "The Oval", description: "A final chance to see how our chapter works together.", isOpen: false },
@@ -16,7 +16,7 @@ const chapterEvents: ChapterEvent[] = [
   { id: "alumni", title: "Midwest Alumni Night", date: "2026-11-14", category: "professional", blurb: "Candid career conversations with alumni across Columbus and the Midwest.", image: "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80" },
 ];
 const faqs: Faq[] = [
-  { id: "who", question: "Who can rush?", answer: "Any Ohio State undergraduate who is curious about technology can rush, regardless of major or prior technical experience." },
+  { id: "who", question: "Who can rush?", answer: "Any undergraduate at The Ohio State University who is curious about technology can rush, regardless of major or prior technical experience." },
   { id: "look", question: "What does KTP look for?", answer: "Curiosity, follow-through, kindness, and a willingness to teach and learn. We care more about how you think and collaborate than what is already on your résumé." },
   { id: "majors", question: "What majors are represented?", answer: "Our chapter spans CSE, Data Analytics, Information Systems, ISE, Computer Engineering, Marketing, Design, Finance, and more." },
   { id: "time", question: "What is the time commitment?", answer: "The pledge process typically requires two chapter commitments plus one team or social activity each week. We publish the full calendar before bids are accepted." },

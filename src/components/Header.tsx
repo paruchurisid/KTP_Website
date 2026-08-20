@@ -17,7 +17,7 @@ export function Header() {
     document.addEventListener("keydown", key); return () => { document.removeEventListener("keydown", key); document.body.style.overflow=""; };
   }, [open]);
   return <header className={`site-header ${scrolled || pathname !== "/" ? "scrolled" : ""}`}>
-    <div className="header-inner"><Link href="/" className="wordmark" aria-label="Kappa Theta Pi Ohio State home"><span>KΘΠ</span><small>Ohio State</small></Link>
+    <div className="header-inner"><Link href="/" className="wordmark" aria-label="Kappa Theta Pi at The Ohio State University home"><span>KΘΠ</span><small>The Ohio State University</small></Link>
       <nav className="desktop-nav" aria-label="Primary">{nav.map(item=><Link className={pathname===item.href?"active":""} href={item.href} key={item.href}>{item.label}</Link>)}</nav>
       <button ref={trigger} className="menu-button" onClick={()=>setOpen(true)} aria-label="Open menu" aria-expanded={open}><Menu /></button>
     </div>
