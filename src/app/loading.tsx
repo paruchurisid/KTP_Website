@@ -1,0 +1,1 @@
+export default function Loading(){return <main id="main"><section className="page-hero loading-hero"><div className="wrap"><span/><span/><span/></div></section><section className="section"><div className="wrap loading-grid">{[1,2,3,4,5,6].map(i=><i key={i}/>)}</div></section></main>}

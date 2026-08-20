@@ -1,0 +1,3 @@
+import type { Metadata } from "next";import { PageHero } from "@/components/PageHero";import { EventFilter } from "@/components/EventFilter";import { getChapterEvents } from "@/data/events";
+export const metadata:Metadata={title:"Events",description:"Projects, professional development, service, and social life at KTP Ohio State."};
+export default async function Events(){const events=await getChapterEvents();return <main id="main"><PageHero kicker="Chapter events" title="Where ideas" accent="become stories." body="A look at the workshops, projects, service, and traditions that shape our chapter."/><section className="section"><div className="wrap"><EventFilter events={events}/></div></section></main>}

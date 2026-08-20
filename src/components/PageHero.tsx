@@ -1,0 +1,1 @@
+export function PageHero({kicker,title,body,accent}:{kicker:string;title:string;body:string;accent?:string}){return <section className="page-hero"><div className="wrap"><p className="eyebrow">{kicker}</p><h1 className="display">{title} {accent&&<em>{accent}</em>}</h1><p>{body}</p></div></section>}

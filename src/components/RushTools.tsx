@@ -1,0 +1,5 @@
+"use client";
+import { useEffect, useState } from "react"; import type { RushEvent } from "@/types";
+const applicationDeadline=new Date("2026-09-13T23:59:00-04:00");
+export function Countdown(){const [left,setLeft]=useState("");useEffect(()=>{const tick=()=>{const ms=Math.max(0,applicationDeadline.getTime()-Date.now());const d=Math.floor(ms/86400000),h=Math.floor(ms/3600000)%24,m=Math.floor(ms/60000)%60;setLeft(ms?`${d}d ${h}h ${m}m`:"Applications closed");};tick();const id=setInterval(tick,60000);return()=>clearInterval(id)},[]);return <span aria-live="polite">{left||"Calculating…"}</span>}
+export function CalendarLink({event}:{event:RushEvent}){const start=new Date(event.startsAt),end=new Date(start.getTime()+90*60000);const fmt=(d:Date)=>d.toISOString().replace(/[-:]|\.\d{3}/g,"");const url=new URL("https://calendar.google.com/calendar/render");url.search=new URLSearchParams({action:"TEMPLATE",text:event.title,dates:`${fmt(start)}/${fmt(end)}`,details:event.description,location:event.location}).toString();return <a className="calendar-link" href={url.toString()} target="_blank">Add to calendar ↗</a>}
