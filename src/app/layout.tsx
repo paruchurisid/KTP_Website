@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ktp-ohio-state.pages.dev"),
   title: { default: "Kappa Theta Pi — Ohio State", template: "%s · KTP Ohio State" },
   description: "Ohio State's co-ed professional technology fraternity.",
-  openGraph: { title: "Kappa Theta Pi at Ohio State", description: "Technology is better built together.", type: "website", images:[{url:"/og.png",width:900,height:473,alt:"Kappa Theta Pi at Ohio State — Technology is better built together"}] },
-  twitter: { card: "summary_large_image", title: "Kappa Theta Pi at Ohio State", description: "Technology is better built together.", images:["/og.png"] },
+  openGraph: { title: "Kappa Theta Pi at Ohio State", description: "Ohio State's co-ed professional technology fraternity.", type: "website", images:[{url:"/og.png",width:900,height:473,alt:"Kappa Theta Pi at Ohio State"}] },
+  twitter: { card: "summary_large_image", title: "Kappa Theta Pi at Ohio State", description: "Ohio State's co-ed professional technology fraternity.", images:["/og.png"] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
